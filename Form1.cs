@@ -33,6 +33,10 @@ namespace CalDemo
         {
             if (username.Text == "admin" && password.Text == "123")
                 return;
+            else if (username.Text == "" || password.Text == "")
+            {
+                MessageBox.Show("Khong duoc de trong username hoac password");
+            }
             else
                 MessageBox.Show("Nhap sai usernam hoac password");
         }
